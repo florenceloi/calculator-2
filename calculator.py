@@ -19,18 +19,18 @@ while True:
     elif token[0] == "+":
         print add(token[1], token[2])
     elif token[0] == "-":
-        subtract(token[1], token[2])
+        print subtract(token[1], token[2])
     elif token[0] == "*":
-        multiply(token[1], token[2])
+        print multiply(token[1], token[2])
     elif token[0] == "/":
-        divide(token[1], token[2])
+        print divide(token[1], token[2])
     elif token[0] == "square":
-        square(token[1])
+        print square(token[1])
     elif token[0] == "cube":
-        cube(token[1])
+        print cube(token[1])
     elif token[0] == "pow":
-        power(token[1], token[2])
+        print power(token[1], token[2])
     elif token[0] == "mod":
-        mod(token[1], token[2])
+        print mod(token[1], token[2])
     else:
         question = raw_input()
