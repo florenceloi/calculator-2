@@ -13,7 +13,11 @@ while True:
     question = raw_input()
     token = question.split(" ")
     token[1] = int(token[1])
-    token[2] = int(token[2])
+    try:
+        token[2] = int(token[2])
+    except IndexError:
+        pass
+
     if token[0] == "q":
         break
     elif token[0] == "+":
