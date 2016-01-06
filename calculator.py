@@ -10,8 +10,8 @@ from arithmetic import *
 
 # Your code goes here
 while True:
-    question = raw_input()
-    token = question.split(" ")
+    question = raw_input("> ")
+    token = question.split()
     token[1] = int(token[1])
     try:
         token[2] = int(token[2])
