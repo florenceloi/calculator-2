@@ -12,18 +12,18 @@ from arithmetic import *
 while True:
     question = raw_input("> ")
     token = question.split()
-    try:
-        token[1] = int(token[1])
-    except IndexError:
-        pass
-    try:
-        token[2] = int(token[2])
-    except IndexError:
-        pass
-    try:
-        token[3] = int(token[3])
-    except IndexError:
-        pass
+    # try:
+    token[1:] = map(int, token[1:])
+    # except IndexError:
+    #     pass
+    # try:
+    #     token[2] = int(token[2])
+    # except IndexError:
+    #     pass
+    # try:
+    #     token[3] = int(token[3])
+    # except IndexError:
+    #     pass
     if len(token) == 1:
         if token[0] == "q":
             break
