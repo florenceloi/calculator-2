@@ -27,27 +27,25 @@ while True:
     operators = ["+", "-", "*", "/", "square", "cube", "pow", "mod"]
 
     if token[0] in operators:
-        if len(token) >= 3 and (token[0] == "+" or token[0] == "-" or token[0] == "*" or token[0] == "/"): 
-            if token[0] == "+":
-                print add(token)
-            elif token[0] == "-":
-                print subtract(token)
-            elif token[0] == "*":
-                print multiply(token)
-            elif token[0] == "/":
-                print divide(token)
-        elif len(token) == 2 and (token[0] == "square" or token[0] == "cube"):
-            if token[0] == "square":
-                print square(token)
-            elif token[0] == "cube":
-                print cube(token)
-        elif len(token) == 3 and (token[0] == "pow" or token[0] == "mod"):
-            if token[0] == "pow":
-                print power(token)
-            elif token[0] == "mod":
-                print mod(token)
-        else:
-            print "That's either too few or too many numbers."
+        # if len(token) >= 3 and (token[0] == "+" or token[0] == "-" or token[0] == "*" or token[0] == "/"): 
+        if token[0] == "+":
+            print add(token)
+        elif token[0] == "-":
+            print subtract(token)
+        elif token[0] == "*":
+            print multiply(token)
+        elif token[0] == "/":
+            print divide(token)
+        # elif len(token) == 2 and (token[0] == "square" or token[0] == "cube"):
+        elif token[0] == "square":
+            print square(token)
+        elif token[0] == "cube":
+            print cube(token)
+        # elif len(token) == 3 and (token[0] == "pow" or token[0] == "mod"):
+        elif token[0] == "pow":
+            print power(token)
+        elif token[0] == "mod":
+            print mod(token)
     else:
         print "Operator not valid."
 

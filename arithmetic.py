@@ -29,17 +29,30 @@ def divide(lst):
 
 def square(lst):
     # Needs only one argument
-    return lst[1] ** 2
+    squares = []
+    for item in lst[1:]:
+        squares.append(item ** 2)
+    return squares
 
 
 def cube(lst):
     # Needs only one argument
-    return lst[1] ** 3
+    cubes = []
+    for item in lst[1:]:
+        cubes.append(item ** 3)
+    return cubes
 
 
 def power(lst):
-    return lst[1] ** lst[2]  # ** = exponent operator
+    total = lst[1]
+    for item in lst[2:]:
+        total = total ** item
+    return total  # ** = exponent operator
 
 
 def mod(lst):
-    return lst[1] % lst[2]
+    quotient = lst[1]
+    for item in lst[2:-1]:
+        quotient = quotient / item
+    return quotient % lst[-1] 
+    
