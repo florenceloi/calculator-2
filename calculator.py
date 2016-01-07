@@ -12,7 +12,7 @@ from arithmetic import *
 while True:
     question = raw_input("> ")
     token = question.split()
-    token[1:] = map(int, token[1:])
+    token[1:] = map(float, token[1:])
 
     if len(token) == 1:
         if token[0] == "q":
