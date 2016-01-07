@@ -12,7 +12,11 @@ from arithmetic import *
 while True:
     question = raw_input("> ")
     token = question.split()
-    token[1:] = map(float, token[1:])
+    try:
+        token[1:] = map(float, token[1:])
+    except ValueError:
+        print "That's not a valid command. Try again!"
+        break
 
     if len(token) == 1:
         if token[0] == "q":
