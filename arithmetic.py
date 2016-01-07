@@ -27,19 +27,19 @@ def divide(lst):
         total /= item
     return total
 
-def square(num1):
+def square(lst):
     # Needs only one argument
-    return num1 * num1
+    return lst[1] ** 2
 
 
-def cube(num1):
+def cube(lst):
     # Needs only one argument
-    return num1 * num1 * num1
+    return lst[1] ** 3
 
 
-def power(num1, num2):
-    return num1 ** num2  # ** = exponent operator
+def power(lst):
+    return lst[1] ** lst[2]  # ** = exponent operator
 
 
-def mod(num1, num2):
-    return num1 % num2
+def mod(lst):
+    return lst[1] % lst[2]
