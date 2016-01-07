@@ -1,20 +1,31 @@
-def add(num1, num2):
-    return num1 + num2
+def add(lst):
+    total = 0
+    for item in lst[1:]:
+        total += item
+    return total
 
 
-def subtract(num1, num2):
-    return num1 - num2
+def subtract(lst):
+    total = lst[1]
+    for item in lst[2:]:
+        total -= item
+    return total
 
 
-def multiply(num1, num2):
-    return num1 * num2
+def multiply(lst):
+    total = lst[1]
+    for item in lst[2:]:
+        total *= item
+    return total
 
 
-def divide(num1, num2):
+def divide(lst):
     # Need to turn at least argument to float for division to
     # not be integer division
-    return float(num1) / float(num2) 
-
+    total = lst[1]
+    for item in lst[2:]:
+        total /= item
+    return total
 
 def square(num1):
     # Needs only one argument
